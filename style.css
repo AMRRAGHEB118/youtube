@@ -1,15 +1,130 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
-    margin : 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 body {
-    font-family: "Roboto","Arial",sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  padding: 0 16px;
+}
+
+.left_section {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.left_section #menu_logo {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left_section #menu_logo:hover {
+  background-color: #d3d3d3;
+  border-radius: 50%;
+}
+
+.left_section img {
+  width: 46%;
+  padding-left: 8px;
+}
+
+.mid_section {
+  display: flex;
+  align-items: center;
+  margin-left: -9px;
+}
+
+.mid_section form {
+  display: flex;
+  height: 40px;
+  width: 628px;
+}
+
+.mid_section form input {
+  width: 100%;
+  border-radius: 20px 0 0 20px;
+  padding: 12px;
+  border: #d3d3d3 1px solid;
+  border-right: none;
+  font-size: 1.6rem;
+}
+
+.mid_section form button {
+  width: 64px;
+  border: 1px solid #d3d3d3;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  background-color: #f8f8f8;
+}
+
+.mid_section #mic_logo {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.mid_section #mic_logo:hover {
+  background-color: #d3d3d3;
+  border-radius: 50%;
+}
+
+.right_section {
+  display: flex;
+  gap: 10px;
+}
+
+.right_section a {
+  color: black;
+  text-decoration: none;
+}
+
+.right_section a #video_call_logo,
+#apps_logo,
+#nofications_logo,
+#account_circle_logo {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.right_section a #video_call_logo:hover {
+  background-color: #d3d3d3;
+  border-radius: 50%;
+}
+
+.right_section a #apps_logo:hover {
+  background-color: #d3d3d3;
+  border-radius: 50%;
+}
+
+.right_section a #nofications_logo:hover {
+  background-color: #d3d3d3;
+  border-radius: 50%;
+}
+
+.right_section a #account_circle_logo:hover {
+  background-color: #d3d3d3;
+  border-radius: 50%;
 }
