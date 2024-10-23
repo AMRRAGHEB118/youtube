@@ -1,14 +1,507 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Youtube</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <div class="left_section">
+        <i class="material-icons" id="menu_logo">menu</i>
+        <img src="images/youtube-logo.png" alt="youtube logo" />
+      </div>
+      <div class="mid_section">
+        <form action="">
+          <input type="text" placeholder="Search " value="" />
+          <button><i class="material-icons logo">search</i></button>
+          <i class="material-icons" id="mic_logo">mic</i>
+        </form>
+      </div>
+      <div class="right_section">
+        <a href="#"
+          ><i class="material-icons" id="video_call_logo">video_call</i></a
+        >
+        <a href="#"><i class="material-icons" id="apps_logo">apps</i></a>
+        <a href="#"
+          ><i class="material-icons" id="nofications_logo">notifications</i></a
+        >
+        <a href="#"
+          ><i class="material-icons" id="account_circle_logo"
+            >account_circle</i
+          ></a
+        >
+      </div>
+    </header>
+    <div class="content_area">
+      <aside>
+        <nav>
+          <a href="#" class="nav_link active"
+            ><i class="material-icons">home</i
+            ><span id="active_span">Home</span></a
+          >
+          <a href="#" class="nav_link"
+            ><i class="material-icons-outlined">explore</i
+            ><span>Explore</span></a
+          >
+          <a href="#" class="nav_link"
+            ><i class="material-icons-outlined">subscriptions</i
+            ><span id="">Subscriptions</span></a
+          >
+          <hr />
+          <a href="#" class="nav_link"
+            ><i class="material-icons-outlined">video_library</i
+            ><span>Library</span></a
+          >
+          <a href="#" class="nav_link"
+            ><i class="material-icons-outlined">history</i
+            ><span>History</span></a
+          >
+          <a href="#" class="nav_link"
+            ><i class="material-icons-outlined">play_circle</i
+            ><span>Your Videos</span></a
+          >
+          <a href="#" class="nav_link"
+            ><i class="material-icons-outlined">watch_later</i
+            ><span>Watch Later</span></a
+          >
+          <hr />
+          <p>Subscriptions</p>
+          <a href="#" class="nav_link">
+            <img src="images/download.png" alt="Sports" class="channel_img" />
+            <span>Sports</span>
+          </a>
+          <a href="#" class="nav_link">
+            <img src="images/download.png" alt="Sports" class="channel_img" />
+            <span>Sports</span>
+          </a>
+          <a href="#" class="nav_link">
+            <img src="images/download.png" alt="Sports" class="channel_img" />
+            <span>Sports</span>
+          </a>
+          <a href="#" class="nav_link">
+            <img src="images/download.png" alt="Sports" class="channel_img" />
+            <span>Sports</span>
+          </a>
+          <a href="#" class="nav_link">
+            <img src="images/download.png" alt="Sports" class="channel_img" />
+            <span>Sports</span>
+          </a>
+          <a href="#" class="nav_link">
+            <img src="images/download.png" alt="Sports" class="channel_img" />
+            <span>Sports</span>
+          </a>
+          <a href="#" class="nav_link">
+            <img src="images/download.png" alt="Sports" class="channel_img" />
+            <span>Sports</span>
+          </a>
+          <a href="#" class="nav_link">
+            <img src="images/download.png" alt="Sports" class="channel_img" />
+            <span>Sports</span>
+          </a>
+          <a href="#" class="nav_link">
+            <img src="images/download.png" alt="Sports" class="channel_img" />
+            <span>Sports</span>
+          </a>
+          <a href="#" class="nav_link">
+            <img src="images/download.png" alt="Sports" class="channel_img" />
+            <span>Sports</span>
+          </a>
+          <a href="#" class="nav_link">
+            <img src="images/download.png" alt="Sports" class="channel_img" />
+            <span>Sports</span>
+          </a>
+          <a href="#" class="nav_link">
+            <img src="images/download.png" alt="Sports" class="channel_img" />
+            <span>Sports</span>
+          </a>
+          <a href="#" class="nav_link">
+            <img src="images/download.png" alt="Sports" class="channel_img" />
+            <span>Sports</span>
+          </a>
+          <a href="#" class="nav_link">
+            <img src="images/download.png" alt="Sports" class="channel_img" />
+            <span>Sports</span>
+          </a>
+          <hr />
+          <p>Explore</p>
+          <a href="#" class="nav_link"
+            ><i class="material-icons-outlined">wifi_tethering</i
+            ><span>Live</span></a
+          >
+          <a href="#" class="nav_link"
+            ><i class="material-icons-outlined">music_note</i
+            ><span>Music</span></a
+          >
+        </nav>
+      </aside>
+      <main>
+        <div class="videos_contanier">
+          <div class="video">
+            <div class="thumbnail">
+              <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+            </div>
+            <div class="video_body">
+              <div class="initiator_img">
+                <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+              </div>
+              <div class="title">
+                <a href="#" class="video_title">
+                  How to create a YouTube thumbnail that gets clicks
+                </a>
+                <a href="#" class="video_initiator"> Youtube </a>
+                <span>10M Views * 3 Months Ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="thumbnail">
+              <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+            </div>
+            <div class="video_body">
+              <div class="initiator_img">
+                <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+              </div>
+              <div class="title">
+                <a href="#" class="video_title">
+                  How to create a YouTube thumbnail that gets clicks
+                </a>
+                <a href="#" class="video_initiator"> Youtube </a>
+                <span>10M Views * 3 Months Ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="thumbnail">
+              <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+            </div>
+            <div class="video_body">
+              <div class="initiator_img">
+                <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+              </div>
+              <div class="title">
+                <a href="#" class="video_title">
+                  How to create a YouTube thumbnail that gets clicks How to create a YouTube thumbnail that gets clicks How to create a YouTube thumbnail that gets clicks
+                </a>
+                <a href="#" class="video_initiator"> Youtube </a>
+                <span>10M Views * 3 Months Ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="thumbnail">
+              <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+            </div>
+            <div class="video_body">
+              <div class="initiator_img">
+                <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+              </div>
+              <div class="title">
+                <a href="#" class="video_title">
+                  How to create a YouTube thumbnail that gets clicks
+                </a>
+                <a href="#" class="video_initiator"> Youtube </a>
+                <span>10M Views * 3 Months Ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="thumbnail">
+              <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+            </div>
+            <div class="video_body">
+              <div class="initiator_img">
+                <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+              </div>
+              <div class="title">
+                <a href="#" class="video_title">
+                  How to create a YouTube thumbnail that gets clicks
+                </a>
+                <a href="#" class="video_initiator"> Youtube </a>
+                <span>10M Views * 3 Months Ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="thumbnail">
+              <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+            </div>
+            <div class="video_body">
+              <div class="initiator_img">
+                <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+              </div>
+              <div class="title">
+                <a href="#" class="video_title">
+                  How to create a YouTube thumbnail that gets clicks How to create a YouTube thumbnail that gets clicks How to create a YouTube thumbnail that gets clicks
+                </a>
+                <a href="#" class="video_initiator"> Youtube </a>
+                <span>10M Views * 3 Months Ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="thumbnail">
+              <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+            </div>
+            <div class="video_body">
+              <div class="initiator_img">
+                <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+              </div>
+              <div class="title">
+                <a href="#" class="video_title">
+                  How to create a YouTube thumbnail that gets clicks
+                </a>
+                <a href="#" class="video_initiator"> Youtube </a>
+                <span>10M Views * 3 Months Ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="thumbnail">
+              <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+            </div>
+            <div class="video_body">
+              <div class="initiator_img">
+                <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+              </div>
+              <div class="title">
+                <a href="#" class="video_title">
+                  How to create a YouTube thumbnail that gets clicks
+                </a>
+                <a href="#" class="video_initiator"> Youtube </a>
+                <span>10M Views * 3 Months Ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="thumbnail">
+              <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+            </div>
+            <div class="video_body">
+              <div class="initiator_img">
+                <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+              </div>
+              <div class="title">
+                <a href="#" class="video_title">
+                  How to create a YouTube thumbnail that gets clicks How to create a YouTube thumbnail that gets clicks How to create a YouTube thumbnail that gets clicks
+                </a>
+                <a href="#" class="video_initiator"> Youtube </a>
+                <span>10M Views * 3 Months Ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="thumbnail">
+              <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+            </div>
+            <div class="video_body">
+              <div class="initiator_img">
+                <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+              </div>
+              <div class="title">
+                <a href="#" class="video_title">
+                  How to create a YouTube thumbnail that gets clicks
+                </a>
+                <a href="#" class="video_initiator"> Youtube </a>
+                <span>10M Views * 3 Months Ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="thumbnail">
+              <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+            </div>
+            <div class="video_body">
+              <div class="initiator_img">
+                <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+              </div>
+              <div class="title">
+                <a href="#" class="video_title">
+                  How to create a YouTube thumbnail that gets clicks
+                </a>
+                <a href="#" class="video_initiator"> Youtube </a>
+                <span>10M Views * 3 Months Ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="thumbnail">
+              <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+            </div>
+            <div class="video_body">
+              <div class="initiator_img">
+                <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+              </div>
+              <div class="title">
+                <a href="#" class="video_title">
+                  How to create a YouTube thumbnail that gets clicks How to create a YouTube thumbnail that gets clicks How to create a YouTube thumbnail that gets clicks
+                </a>
+                <a href="#" class="video_initiator"> Youtube </a>
+                <span>10M Views * 3 Months Ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="thumbnail">
+              <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+            </div>
+            <div class="video_body">
+              <div class="initiator_img">
+                <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+              </div>
+              <div class="title">
+                <a href="#" class="video_title">
+                  How to create a YouTube thumbnail that gets clicks
+                </a>
+                <a href="#" class="video_initiator"> Youtube </a>
+                <span>10M Views * 3 Months Ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="thumbnail">
+              <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+            </div>
+            <div class="video_body">
+              <div class="initiator_img">
+                <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+              </div>
+              <div class="title">
+                <a href="#" class="video_title">
+                  How to create a YouTube thumbnail that gets clicks
+                </a>
+                <a href="#" class="video_initiator"> Youtube </a>
+                <span>10M Views * 3 Months Ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="thumbnail">
+              <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+            </div>
+            <div class="video_body">
+              <div class="initiator_img">
+                <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+              </div>
+              <div class="title">
+                <a href="#" class="video_title">
+                  How to create a YouTube thumbnail that gets clicks How to create a YouTube thumbnail that gets clicks How to create a YouTube thumbnail that gets clicks
+                </a>
+                <a href="#" class="video_initiator"> Youtube </a>
+                <span>10M Views * 3 Months Ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="thumbnail">
+              <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+            </div>
+            <div class="video_body">
+              <div class="initiator_img">
+                <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+              </div>
+              <div class="title">
+                <a href="#" class="video_title">
+                  How to create a YouTube thumbnail that gets clicks
+                </a>
+                <a href="#" class="video_initiator"> Youtube </a>
+                <span>10M Views * 3 Months Ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="thumbnail">
+              <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+            </div>
+            <div class="video_body">
+              <div class="initiator_img">
+                <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+              </div>
+              <div class="title">
+                <a href="#" class="video_title">
+                  How to create a YouTube thumbnail that gets clicks
+                </a>
+                <a href="#" class="video_initiator"> Youtube </a>
+                <span>10M Views * 3 Months Ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="thumbnail">
+              <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+            </div>
+            <div class="video_body">
+              <div class="initiator_img">
+                <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+              </div>
+              <div class="title">
+                <a href="#" class="video_title">
+                  How to create a YouTube thumbnail that gets clicks How to create a YouTube thumbnail that gets clicks How to create a YouTube thumbnail that gets clicks
+                </a>
+                <a href="#" class="video_initiator"> Youtube </a>
+                <span>10M Views * 3 Months Ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="thumbnail">
+              <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+            </div>
+            <div class="video_body">
+              <div class="initiator_img">
+                <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+              </div>
+              <div class="title">
+                <a href="#" class="video_title">
+                  How to create a YouTube thumbnail that gets clicks
+                </a>
+                <a href="#" class="video_initiator"> Youtube </a>
+                <span>10M Views * 3 Months Ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="thumbnail">
+              <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+            </div>
+            <div class="video_body">
+              <div class="initiator_img">
+                <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+              </div>
+              <div class="title">
+                <a href="#" class="video_title">
+                  How to create a YouTube thumbnail that gets clicks
+                </a>
+                <a href="#" class="video_initiator"> Youtube </a>
+                <span>10M Views * 3 Months Ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="thumbnail">
+              <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+            </div>
+            <div class="video_body">
+              <div class="initiator_img">
+                <img src="images/YouTube-logo-hero-1.webp" alt="youtube" />
+              </div>
+              <div class="title">
+                <a href="#" class="video_title">
+                  How to create a YouTube thumbnail that gets clicks How to create a YouTube thumbnail that gets clicks How to create a YouTube thumbnail that gets clicks
+                </a>
+                <a href="#" class="video_initiator"> Youtube </a>
+                <span>10M Views * 3 Months Ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>
